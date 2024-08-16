@@ -7,10 +7,15 @@ namespace cloudTrainingSchema;
 //         age      : Integer;
 //         gender   : String;
 // }
+
+define type name : String(50);
+type lastName : String(50);
+
+
 entity Trainee {
     key ID       : Integer;
-        name     : String;
-        lastName : String;
+        name     : name;
+        lastName : lastName;
         age      : Integer;
         gender   : String;
 
@@ -18,7 +23,7 @@ entity Trainee {
 
 entity Trainer {
     key ID       : Integer;
-        name     : String;
+        name     : lastName;
         lastName : String;
         age      : Integer;
         gender   : String;
